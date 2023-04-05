@@ -4,7 +4,11 @@ const inputContent = document.getElementById("input-content")
 
 blogForm.addEventListener("submit", (event) => {
     event.preventDefault()
-    let post = {}
+    let post = {
+        title: inputTitle.value,
+        body:inputContent.value
+    }
+    console.log(post)
 })
 
 
