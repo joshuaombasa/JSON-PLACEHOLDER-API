@@ -1,3 +1,11 @@
+const blogForm = document.getElementById("blog-form")
+
+blogForm.addEventListener("submit", (event) => {
+    event.preventDefault()
+})
+
+
+
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     .then(res => res.json())
     .then(data => {
