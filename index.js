@@ -1,7 +1,10 @@
 const blogForm = document.getElementById("blog-form")
+const inputTitle = document.getElementById("input-title")
+const inputContent = document.getElementById("input-content")
 
 blogForm.addEventListener("submit", (event) => {
     event.preventDefault()
+    let post = {}
 })
 
 
