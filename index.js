@@ -40,9 +40,8 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     
           .then(response => response.json())
           .then(post => {
-            console.log(data)
-            document.getElementById("container").innerHTML += 
-            `
+            console.log(post)
+            document.getElementById("container").innerHTML += `
                     <h4>${post.title}</h4>
                     <p>${post.body}</p>
                     <hr>
