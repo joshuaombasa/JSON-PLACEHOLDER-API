@@ -2,13 +2,13 @@ const blogForm = document.getElementById("blog-form")
 const inputTitle = document.getElementById("input-title")
 const inputContent = document.getElementById("input-content")
 
-
+const postsArr = []
 
 
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     .then(res => res.json())
     .then(data => {
-        const postsArr = data.slice(0, 5)
+        postsArr = data.slice(0, 5)
 
        const postsHtml = postsArr.map((post) => {
            return `
