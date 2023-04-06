@@ -43,7 +43,7 @@ blogForm.addEventListener("submit", (event) => {
           .then(response => response.json())
           .then(post => {
             console.log(post)
-            
+            renderPosts()
           }
           
           
