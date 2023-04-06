@@ -11,7 +11,10 @@ blogForm.addEventListener("submit", (event) => {
     console.log(post)
     fetch("https://apis.scrimba.com/jsonplaceholder/posts", {
         method: "POST",
-        body: JSON.stringify(post)
+        body: JSON.stringify(post),
+        headers: {
+            "Content-Type": "application/json"
+        }
     })
 })
 
