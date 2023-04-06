@@ -42,6 +42,7 @@ blogForm.addEventListener("submit", (event) => {
     
           .then(response => response.json())
           .then(post => {
+            postsArr.unshift(post)
             console.log(post)
             renderPosts()
           }
