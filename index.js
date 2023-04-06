@@ -26,5 +26,5 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
                   `
        }).join("")
        document.getElementById("container").innerHTML = postsHtml
-       console.log(postsHtml)
+       
     })
