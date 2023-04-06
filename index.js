@@ -20,10 +20,10 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
     .then(res => res.json())
     .then(data => {
         postsArr = data.slice(0, 5)
-       
+        renderPosts()
     })
 
-    blogForm.addEventListener("submit", (event) => {
+blogForm.addEventListener("submit", (event) => {
         event.preventDefault()
         let post = {
             title: inputTitle.value,
@@ -43,11 +43,7 @@ fetch("https://apis.scrimba.com/jsonplaceholder/posts")
           .then(response => response.json())
           .then(post => {
             console.log(post)
-            document.getElementById("container").innerHTML += `
-                    <h4>${post.title}</h4>
-                    <p>${post.body}</p>
-                    <hr>
-            `
+            
           }
           
           
