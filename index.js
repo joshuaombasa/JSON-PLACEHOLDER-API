@@ -2,7 +2,7 @@ const blogForm = document.getElementById("blog-form")
 const inputTitle = document.getElementById("input-title")
 const inputContent = document.getElementById("input-content")
 
-const postsArr = []
+let postsArr = []
 
 
 fetch("https://apis.scrimba.com/jsonplaceholder/posts")
