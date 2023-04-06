@@ -8,14 +8,16 @@ blogForm.addEventListener("submit", (event) => {
         title: inputTitle.value,
         body:inputContent.value
     }
-    
-    fetch("https://apis.scrimba.com/jsonplaceholder/posts", {
+
+    const options = {
         method: "POST",
         body: JSON.stringify(post),
         headers: {
             "Content-Type": "application/json"
         }
-    })
+    }
+    
+    fetch("https://apis.scrimba.com/jsonplaceholder/posts", options)
 
       .then(response => response.json())
       .then(data => console.log(data))
