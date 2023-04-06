@@ -8,7 +8,7 @@ blogForm.addEventListener("submit", (event) => {
         title: inputTitle.value,
         body:inputContent.value
     }
-    console.log(post)
+    
     fetch("https://apis.scrimba.com/jsonplaceholder/posts", {
         method: "POST",
         body: JSON.stringify(post),
