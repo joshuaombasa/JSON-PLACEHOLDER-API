@@ -45,11 +45,8 @@ blogForm.addEventListener("submit", (event) => {
             postsArr.unshift(post)
             console.log(post)
             renderPosts()
-          }
-          
-          
-          )
-    
+          })
+        blogForm.reset()
           
     })
     
